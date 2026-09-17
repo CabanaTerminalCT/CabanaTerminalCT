@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/skull.svg" alt="CabanaTerminal" width="900"/>
+<img src="assets/skull.webp" alt="CabanaTerminal" width="720"/>
 
 ```console
 root@cabana:~# whoami
@@ -152,7 +152,7 @@ ensinar. **Chega chegando, abre uma issue e senta na roda.**
 ```text
        .-.
       (o o)     "Se ninguém vai te dar a resposta,
-      | O \      compila a tua."
+      | O \      compila a tua cunpadi."
       |   |\
       '~~~'
    --- CABANA TERMINAL ---
