@@ -1,0 +1,72 @@
+name: "Bug"
+description: "Reporte um erro em script, ferramenta, trilha ou write-up"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Valeu por reportar. Antes de enviar, confere se já não existe uma issue igual.
+  - type: checkboxes
+    id: checagens
+    attributes:
+      label: Checklist
+      options:
+        - label: Procurei issues existentes e não achei nada igual
+          required: true
+        - label: Estou usando a versão mais recente do repositório
+          required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreve o problema de forma direta.
+      placeholder: "Ao rodar ./script.sh o programa quebra com..."
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      description: Passo a passo pra qualquer pessoa conseguir repetir o erro.
+      placeholder: |
+        1. Clone o repo
+        2. Rode tal comando
+        3. Veja o erro
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      placeholder: "Eu esperava que..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / saída de erro
+      description: Cola aqui o erro completo. Use blocos de código.
+      render: shell
+    validations:
+      required: false
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: SO, versão da linguagem, terminal, etc.
+      placeholder: "ex: Linux Mint 21, Python 3.11, bash 5.1"
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área afetada
+      options:
+        - Trilha / conteúdo
+        - Write-up de CTF
+        - Ferramenta / script
+        - Documentação
+        - Outro
+    validations:
+      required: true

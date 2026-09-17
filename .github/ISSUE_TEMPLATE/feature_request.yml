@@ -1,0 +1,58 @@
+name: "Sugestão"
+description: "Sugira uma trilha, exercício, ferramenta ou melhoria"
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Toda ideia é bem-vinda. Sem gatekeeping.
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema isso resolve?
+      description: Descreve a necessidade antes da solução.
+      placeholder: "Hoje não temos nada sobre..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: O que você propõe?
+      placeholder: "Sugiro criar uma trilha de..."
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de sugestão
+      options:
+        - Nova trilha / conteúdo
+        - Novo exercício / task
+        - Nova ferramenta / script
+        - Melhoria em conteúdo existente
+        - Tradução
+        - Documentação
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto extra
+      description: Links, referências, exemplos.
+    validations:
+      required: false
+  - type: checkboxes
+    id: ajuda
+    attributes:
+      label: Disposição
+      options:
+        - label: Quero implementar isso eu mesmo(a)
+        - label: Posso ajudar no review

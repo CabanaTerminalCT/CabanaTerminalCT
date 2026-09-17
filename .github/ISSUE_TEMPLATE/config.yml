@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dúvidas e conversa geral
+    url: https://github.com/CabanaTerminalCT/CabanaTerminalCT/discussions
+    about: Para papo aberto, dúvidas soltas e ideias ainda sem forma, use as Discussions.
+  - name: Código de Conduta
+    url: https://github.com/CabanaTerminalCT/CabanaTerminalCT/blob/main/CODE_OF_CONDUCT.md
+    about: Leia antes de participar. Respeito sempre.

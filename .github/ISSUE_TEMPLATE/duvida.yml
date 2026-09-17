@@ -1,0 +1,38 @@
+name: "Dúvida"
+description: "Pergunta sem medo. Dúvida é o começo do hack."
+title: "[DUVIDA] "
+labels: ["duvida"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ninguém vai te julgar. Manda a pergunta.
+  - type: textarea
+    id: duvida
+    attributes:
+      label: Qual é a dúvida?
+      placeholder: "Não entendi como funciona..."
+    validations:
+      required: true
+  - type: textarea
+    id: tentativa
+    attributes:
+      label: O que você já tentou?
+      description: Cola o código/comando e o erro, se tiver.
+      render: shell
+    validations:
+      required: false
+  - type: input
+    id: assunto
+    attributes:
+      label: Assunto / linguagem
+      placeholder: "ex: Python, redes, Git, C"
+    validations:
+      required: false
+  - type: checkboxes
+    id: pesquisou
+    attributes:
+      label: Antes de perguntar
+      options:
+        - label: Procurei na documentação e em issues antigas
+          required: true

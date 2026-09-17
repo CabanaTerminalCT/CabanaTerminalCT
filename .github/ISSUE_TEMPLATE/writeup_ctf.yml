@@ -1,0 +1,71 @@
+name: "Write-up de CTF"
+description: "Proponha ou publique um write-up de desafio resolvido"
+title: "[WRITEUP] "
+labels: ["writeup", "ctf"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Todo desafio resolvido vira documentação pública. Jogue limpo e dê os créditos.
+  - type: input
+    id: ctf
+    attributes:
+      label: Nome do CTF / evento
+      placeholder: "ex: picoCTF 2024"
+    validations:
+      required: true
+  - type: input
+    id: desafio
+    attributes:
+      label: Nome do desafio
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options:
+        - Web
+        - Pwn / Binary
+        - Reversing
+        - Crypto
+        - Forense
+        - OSINT
+        - Misc
+        - Outro
+    validations:
+      required: true
+  - type: dropdown
+    id: dificuldade
+    attributes:
+      label: Dificuldade
+      options:
+        - Fácil
+        - Médio
+        - Difícil
+        - Insano
+    validations:
+      required: false
+  - type: textarea
+    id: resumo
+    attributes:
+      label: Resumo da solução
+      description: Como você pensou e resolveu. Sem spoiler desnecessário.
+    validations:
+      required: true
+  - type: textarea
+    id: ferramentas
+    attributes:
+      label: Ferramentas usadas
+      placeholder: "ex: gdb, pwntools, CyberChef"
+    validations:
+      required: false
+  - type: checkboxes
+    id: regras
+    attributes:
+      label: Confirmações
+      options:
+        - label: O desafio já foi encerrado (sem spoiler de prova ativa)
+          required: true
+        - label: Dei crédito a qualquer fonte externa usada
+          required: true

@@ -78,7 +78,8 @@ drwxr-xr-x  ferramentas-e-scripts/
 drwxr-xr-x  desafios-da-comunidade/
 drwxr-xr-x  zines-e-anotacoes/
 -rw-r--r--  MANIFESTO.md
--rw-r--r--  COMO_CONTRIBUIR.md
+-rw-r--r--  CONTRIBUTING.md
+-rw-r--r--  CODE_OF_CONDUCT.md
 ```
 
 | Frente | O que rola |
